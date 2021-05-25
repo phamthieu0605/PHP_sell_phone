@@ -1,0 +1,134 @@
+:root {
+    --primary-color: ;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial, Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Responsive */
+.grid {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid #000; */
+}
+
+.grid__column-2 {
+    width: 16.67%;
+    border: 1px solid #ccc;
+    height: 410px;
+    float: left;
+    margin-right: 10px;
+}
+
+.grid__column-10 {
+    width: 100%;
+}
+
+.grid__column-3 {
+    width: 25%;
+    padding: 5px 5px 0 20px;
+    border: 1px solid #ccc;
+}
+
+.title-top {
+    width: 1200px;
+    height: 40px;
+    background-image: linear-gradient(120deg, #ff9c00 0%, #ec1f1f 50%, #ff9c00 100%);
+    position: absolute;
+    border-radius: 30px;
+    top: -20px;
+}
+
+.title-bot {
+    width: 1200px;
+    height: 40px;
+    background: rgb(233, 227, 227);
+    position: absolute;
+    border-radius: 30px;
+    bottom: -20px;
+}
+
+.title-top h1 {
+    display: flex;
+    justify-content: center;
+    line-height: 40px;
+    color: var(--white-color);
+}
+
+.title-bot a {
+    display: flex;
+    justify-content: center;
+    line-height: 40px;
+    color: var(--text-color);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.title-bot:hover {
+    background: rgb(206, 206, 206);
+}
+
+/* Giảm tiền */
+div.discount::before {
+    content: ' ';
+    display: inline-block;
+    background: url(../img/mobile/sale.png);
+    background-size: 50% 50%;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #f13500;
+    border-radius: 50%;
+    vertical-align: middle;
+    position: relative;
+    margin-right: 5px;
+}
+
+div.discount {
+    position: relative;
+    background: linear-gradient(to right, #fd8260, #f13500);
+    height: 20px;
+    width: 110px;
+    border-radius: 20px;
+    color: var(--white-color);
+    bottom: 118px;
+    left: 15px;
+}
+
+.btn-pay {
+    font-size: 2rem;
+    background-color: #c0392b;
+    color: #ecf0f1;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.btn-update {
+   font-size: 2rem;
+   background-color: #27ae60;
+   color: #ecf0f1;
+   padding: 5px;
+   cursor: pointer;
+}
